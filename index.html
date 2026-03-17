@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>虚线求和数独</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Great Sudoku Project</p>
+        <h1>虚线求和数独</h1>
+        <p class="subtitle">规则：满足标准数独，同时每个虚线矩形内数字之和等于左上角提示值。</p>
+      </header>
+
+      <section class="panel">
+        <div class="controls">
+          <label class="difficulty-wrap" for="difficultySelect">
+            <span>难度</span>
+            <select id="difficultySelect">
+              <option value="beginner">入门</option>
+              <option value="normal">普通</option>
+              <option value="hard">困难</option>
+              <option value="expert" selected>专家</option>
+            </select>
+          </label>
+          <button id="newGameBtn" type="button">新开一局</button>
+          <button id="hintBtn" type="button">提示</button>
+          <button id="solveBtn" type="button">揭晓答案</button>
+          <button id="resetBtn" type="button">清空输入</button>
+        </div>
+        <p id="statusText" class="status">准备开始。</p>
+      </section>
+
+      <section id="boardWrap" class="board-wrap">
+        <div id="board" class="board" aria-label="数独棋盘"></div>
+      </section>
+
+      <section class="pad-wrap">
+        <div class="pad-top">
+          <button id="noteModeBtn" class="note-toggle" type="button" aria-pressed="false">备注 OFF</button>
+          <span class="pad-tip">先点格子，再点下面数字</span>
+        </div>
+        <div id="numberPad" class="number-pad" aria-label="数字输入盘">
+          <button class="num-btn" type="button" data-num="1">1</button>
+          <button class="num-btn" type="button" data-num="2">2</button>
+          <button class="num-btn" type="button" data-num="3">3</button>
+          <button class="num-btn" type="button" data-num="4">4</button>
+          <button class="num-btn" type="button" data-num="5">5</button>
+          <button class="num-btn" type="button" data-num="6">6</button>
+          <button class="num-btn" type="button" data-num="7">7</button>
+          <button class="num-btn" type="button" data-num="8">8</button>
+          <button class="num-btn" type="button" data-num="9">9</button>
+          <button id="eraseBtn" class="num-btn erase" type="button">清除</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

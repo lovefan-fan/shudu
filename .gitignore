@@ -1,0 +1,16 @@
+# Build / packaging artifacts
+android/
+www/
+.android-env/
+node_modules/
+
+# APK / build outputs
+*.apk
+*.aab
+*.keystore
+
+# Tooling files not needed for source-only repo
+build-apk.ps1
+capacitor.config.json
+package.json
+package-lock.json
