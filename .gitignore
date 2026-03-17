@@ -14,3 +14,8 @@ build-apk.ps1
 capacitor.config.json
 package.json
 package-lock.json
+
+# Reference images (not part of runtime)
+1.jpg
+2.png
+3.jpg
